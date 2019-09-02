@@ -1,0 +1,22 @@
+﻿<Window x:Class="OrderMgmt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderMgmt"
+        mc:Ignorable="d"
+        Title="Order Inventory" Height="450" Width="800" Initialized="Window_Initialized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Name="lbOrders" HorizontalAlignment="Left" Height="214" Margin="31,142,0,0" VerticalAlignment="Top" Width="290" SelectionChanged="LbOrders_SelectionChanged"/>
+        <Label Content="Orders:" HorizontalAlignment="Left" Margin="31,111,0,0" VerticalAlignment="Top" Width="290" Height="26"/>
+        <ListBox x:Name="lbOrderDetails" HorizontalAlignment="Left" Height="313" Margin="430,43,0,0" VerticalAlignment="Top" Width="290"/>
+        <Label Content="Order Details:" HorizontalAlignment="Left" Margin="430,12,0,0" VerticalAlignment="Top" Width="290" Height="26"/>
+        <TextBox Name="txtFilter" HorizontalAlignment="Left" Height="23" Margin="31,43,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="290" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Filter:" HorizontalAlignment="Left" Margin="31,12,0,0" VerticalAlignment="Top" Width="290" Height="26"/>
+
+    </Grid>
+</Window>
