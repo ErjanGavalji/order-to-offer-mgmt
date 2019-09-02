@@ -131,6 +131,8 @@ namespace OrderMgmt
                 lbOrderDetails.ItemsSource = new string[] {
                     string.Format("Order # {0}", selectedItem.Item1),
                     "",
+                    "                              Details:",
+                    "",
                     string.Format("{0}", selectedItem.Item2),
                     string.Format("Monthly Payment: ${0:#.00}", monthly),
                     string.Format("YoY Value: ${0}", monthly / 100 * 23)
